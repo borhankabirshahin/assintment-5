@@ -35,19 +35,19 @@
           <div
             class="w-[120px] h-[50px] rounded-[100px] flex items-center justify-center bg-[#f5fff6]"
           >
-            <p class="font-bold">0</p>
+            <p id="heart-count" class="font-bold">0</p>
             <img class="h-[20px]" src="./assets/heart.png" alt="" />
           </div>
           <div
             class="w-[120px] h-[50px] rounded-full flex items-center justify-center bg-[#f5fff6]"
           >
-            <p class="font-bold">100</p>
+            <p id="coin-count" class="font-bold">100</p>
             <img class="h-[20px]" src="./assets/coin.png" alt="" />
           </div>
           <div
             class="w-[120px] h-[50px] rounded-[100px] bg-[#00A63E] text-white flex items-center justify-center"
           >
-            <span>0 </span> <span class="m-1"> Copy</span>
+            <span id="copy-count">0 </span> <span class="m-1"> Copy</span>
           </div>
         </div>
       </div>
@@ -79,7 +79,9 @@
           class="left-div grid grid-cols-1 col-span-3 md:grid-cols-3 gap-5 mt-[48px]"
         >
           <div
-            class="border-b-2 border-gray-200 bg-white h-[300px] rounded-xl gap-2 p-[32px]"
+            class="border-b-2 border-gray-200 bg-white h-[300px] rounded-xl gap-2 p-[32px] shadow-lg"
+            data-service-name="জাতীয় জরুরি সেবা"
+            data-service-number="999"
           >
             <div class="flex justify-between">
               <div
@@ -91,7 +93,9 @@
                   alt=""
                 />
               </div>
-              <i class="fa-regular fa-heart h-[24px] w-[24px]"></i>
+              <i
+                class="heart-btn cursor-pointer fa-regular fa-heart h-[24px] w-[24px]"
+              ></i>
             </div>
             <div>
               <h1 class="font-bold text-[20px] mt-4">জাতীয় জরুরি সেবা</h1>
@@ -105,19 +109,21 @@
             </div>
             <div class="flex justify-between">
               <button
-                class="btn bg-white w-[45%] h-[30px] hover:bg-gray-200 text-gray-400"
+                class="btn bg-white w-[45%] h-[30px] hover:bg-gray-200 text-gray-400 copy-btn"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="btn w-[45%] h-[30px] bg-[#00A63E] hover:bg-green-200 text-white"
+                class="btn w-[45%] h-[30px] bg-[#00A63E] hover:bg-green-200 text-white hover:text-black call-btn"
               >
                 <i class="fa-solid fa-phone text-white"></i> Call
               </button>
             </div>
           </div>
           <div
-            class="border-b-2 border-gray-200 bg-white h-[300px] rounded-xl gap-2 p-[32px]"
+            class="border-b-2 border-gray-200 bg-white h-[300px] rounded-xl gap-2 p-[32px] shadow-lg"
+            data-service-name="পুলিশ"
+            data-service-number="999"
           >
             <div class="flex justify-between">
               <div
@@ -129,7 +135,9 @@
                   alt=""
                 />
               </div>
-              <i class="fa-regular fa-heart h-[24px] w-[24px]"></i>
+              <i
+                class="heart-btn cursor-pointer fa-regular fa-heart h-[24px] w-[24px]"
+              ></i>
             </div>
             <div>
               <h1 class="font-bold text-[20px] mt-4">পুলিশ</h1>
@@ -143,19 +151,21 @@
             </div>
             <div class="flex justify-between">
               <button
-                class="btn bg-white w-[45%] h-[30px] hover:bg-gray-200 text-gray-400"
+                class="btn bg-white w-[45%] h-[30px] hover:bg-gray-200 text-gray-400 copy-btn"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="btn w-[45%] h-[30px] bg-[#00A63E] hover:bg-green-200 text-white"
+                class="btn w-[45%] h-[30px] bg-[#00A63E] hover:bg-green-200 text-white hover:text-black call-btn"
               >
                 <i class="fa-solid fa-phone text-white"></i> Call
               </button>
             </div>
           </div>
           <div
-            class="border-b-2 border-gray-200 bg-white h-[300px] rounded-xl gap-2 p-[32px]"
+            class="border-b-2 border-gray-200 bg-white h-[300px] rounded-xl gap-2 p-[32px] shadow-lg"
+            data-service-name="ফায়ার সার্ভিস"
+            data-service-number="999"
           >
             <div class="flex justify-between">
               <div
@@ -167,7 +177,9 @@
                   alt=""
                 />
               </div>
-              <i class="fa-regular fa-heart h-[24px] w-[24px]"></i>
+              <i
+                class="heart-btn cursor-pointer fa-regular fa-heart h-[24px] w-[24px]"
+              ></i>
             </div>
             <div>
               <h1 class="font-bold text-[20px] mt-4">ফায়ার সার্ভিস</h1>
@@ -181,19 +193,21 @@
             </div>
             <div class="flex justify-between">
               <button
-                class="btn bg-white w-[45%] h-[30px] hover:bg-gray-200 text-gray-400"
+                class="btn bg-white w-[45%] h-[30px] hover:bg-gray-200 text-gray-400 copy-btn"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="btn w-[45%] h-[30px] bg-[#00A63E] hover:bg-green-200 text-white"
+                class="btn w-[45%] h-[30px] bg-[#00A63E] hover:bg-green-200 text-white hover:text-black call-btn"
               >
                 <i class="fa-solid fa-phone text-white"></i> Call
               </button>
             </div>
           </div>
           <div
-            class="border-b-2 border-gray-200 bg-white h-[300px] rounded-xl gap-2 p-[32px]"
+            class="border-b-2 border-gray-200 bg-white h-[300px] rounded-xl gap-2 p-[32px] shadow-lg"
+            data-service-name="অ্যাম্বুলেন্স"
+            data-service-number="1994-999999"
           >
             <div class="flex justify-between">
               <div
@@ -205,7 +219,9 @@
                   alt=""
                 />
               </div>
-              <i class="fa-regular fa-heart h-[24px] w-[24px]"></i>
+              <i
+                class="heart-btn cursor-pointer fa-regular fa-heart h-[24px] w-[24px]"
+              ></i>
             </div>
             <div>
               <h1 class="font-bold text-[20px] mt-4">অ্যাম্বুলেন্স</h1>
@@ -219,19 +235,21 @@
             </div>
             <div class="flex justify-between">
               <button
-                class="btn bg-white w-[45%] h-[30px] hover:bg-gray-200 text-gray-400"
+                class="btn bg-white w-[45%] h-[30px] hover:bg-gray-200 text-gray-400 copy-btn"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="btn w-[45%] h-[30px] bg-[#00A63E] hover:bg-green-200 text-white"
+                class="btn w-[45%] h-[30px] bg-[#00A63E] hover:bg-green-200 text-white hover:text-black call-btn"
               >
                 <i class="fa-solid fa-phone text-white"></i> Call
               </button>
             </div>
           </div>
           <div
-            class="border-b-2 border-gray-200 bg-white h-[300px] rounded-xl gap-2 p-[32px]"
+            class="border-b-2 border-gray-200 bg-white h-[300px] rounded-xl gap-2 p-[32px] shadow-lg"
+            data-service-name="নারী ও শিশু সহায়তা"
+            data-service-number="109"
           >
             <div class="flex justify-between">
               <div
@@ -243,7 +261,9 @@
                   alt=""
                 />
               </div>
-              <i class="fa-regular fa-heart h-[24px] w-[24px]"></i>
+              <i
+                class="heart-btn cursor-pointer fa-regular fa-heart h-[24px] w-[24px]"
+              ></i>
             </div>
             <div>
               <h1 class="font-bold text-[20px] mt-4">নারী ও শিশু সহায়তা</h1>
@@ -257,19 +277,21 @@
             </div>
             <div class="flex justify-between">
               <button
-                class="btn bg-white w-[45%] h-[30px] hover:bg-gray-200 text-gray-400"
+                class="btn bg-white w-[45%] h-[30px] hover:bg-gray-200 text-gray-400 copy-btn"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="btn w-[45%] h-[30px] bg-[#00A63E] hover:bg-green-200 text-white"
+                class="btn w-[45%] h-[30px] bg-[#00A63E] hover:bg-green-200 text-white hover:text-black call-btn"
               >
                 <i class="fa-solid fa-phone text-white"></i> Call
               </button>
             </div>
           </div>
           <div
-            class="border-b-2 border-gray-200 bg-white h-[300px] rounded-xl gap-2 p-[32px]"
+            class="border-b-2 border-gray-200 bg-white h-[300px] rounded-xl gap-2 p-[32px] shadow-lg"
+            data-service-name="দুদক"
+            data-service-number="106"
           >
             <div class="flex justify-between">
               <div
@@ -281,7 +303,9 @@
                   alt=""
                 />
               </div>
-              <i class="fa-regular fa-heart h-[24px] w-[24px]"></i>
+              <i
+                class="heart-btn cursor-pointer fa-regular fa-heart h-[24px] w-[24px]"
+              ></i>
             </div>
             <div>
               <h1 class="font-bold text-[20px] mt-4">দুদক</h1>
@@ -295,19 +319,21 @@
             </div>
             <div class="flex justify-between">
               <button
-                class="btn bg-white w-[45%] h-[30px] hover:bg-gray-200 text-gray-400"
+                class="btn bg-white w-[45%] h-[30px] hover:bg-gray-200 text-gray-400 copy-btn"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="btn w-[45%] h-[30px] bg-[#00A63E] hover:bg-green-200 text-white"
+                class="btn w-[45%] h-[30px] bg-[#00A63E] hover:bg-green-200 text-white hover:text-black call-btn"
               >
                 <i class="fa-solid fa-phone text-white"></i> Call
               </button>
             </div>
           </div>
           <div
-            class="border-b-2 border-gray-200 bg-white h-[300px] rounded-xl gap-2 p-[32px]"
+            class="border-b-2 border-gray-200 bg-white h-[300px] rounded-xl gap-2 p-[32px] shadow-lg"
+            data-service-name="বিদ্যুৎ বিভ্রাট"
+            data-service-number="16216"
           >
             <div class="flex justify-between">
               <div
@@ -319,7 +345,9 @@
                   alt=""
                 />
               </div>
-              <i class="fa-regular fa-heart h-[24px] w-[24px]"></i>
+              <i
+                class="heart-btn cursor-pointer fa-regular fa-heart h-[24px] w-[24px]"
+              ></i>
             </div>
             <div>
               <h1 class="font-bold text-[20px] mt-4">বিদ্যুৎ বিভ্রাট</h1>
@@ -333,19 +361,21 @@
             </div>
             <div class="flex justify-between">
               <button
-                class="btn bg-white w-[45%] h-[30px] hover:bg-gray-200 text-gray-400"
+                class="btn bg-white w-[45%] h-[30px] hover:bg-gray-200 text-gray-400 copy-btn"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="btn w-[45%] h-[30px] bg-[#00A63E] hover:bg-green-200 text-white"
+                class="btn w-[45%] h-[30px] bg-[#00A63E] hover:bg-green-200 text-white hover:text-black call-btn"
               >
                 <i class="fa-solid fa-phone text-white"></i> Call
               </button>
             </div>
           </div>
           <div
-            class="border-b-2 border-gray-200 bg-white h-[300px] rounded-xl gap-2 p-[32px]"
+            class="border-b-2 border-gray-200 bg-white h-[300px] rounded-xl gap-2 p-[32px] shadow-lg"
+            data-service-name="ব্র্যাক"
+            data-service-number="16445"
           >
             <div class="flex justify-between">
               <div
@@ -353,7 +383,9 @@
               >
                 <img class="w-[30px] h-[30px]" src="./assets/brac.png" alt="" />
               </div>
-              <i class="fa-regular fa-heart h-[24px] w-[24px]"></i>
+              <i
+                class="heart-btn cursor-pointer fa-regular fa-heart h-[24px] w-[24px]"
+              ></i>
             </div>
             <div>
               <h1 class="font-bold text-[20px] mt-4">ব্র্যাক</h1>
@@ -367,19 +399,21 @@
             </div>
             <div class="flex justify-between">
               <button
-                class="btn bg-white w-[45%] h-[30px] hover:bg-gray-200 text-gray-400"
+                class="btn bg-white w-[45%] h-[30px] hover:bg-gray-200 text-gray-400 copy-btn"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="btn w-[45%] h-[30px] bg-[#00A63E] hover:bg-green-200 text-white"
+                class="btn w-[45%] h-[30px] bg-[#00A63E] hover:bg-green-200 text-white hover:text-black call-btn"
               >
                 <i class="fa-solid fa-phone text-white"></i> Call
               </button>
             </div>
           </div>
           <div
-            class="border-b-2 border-gray-200 bg-white h-[300px] rounded-xl gap-2 p-[32px]"
+            class="border-b-2 border-gray-200 bg-white h-[300px] rounded-xl gap-2 p-[32px] shadow-lg"
+            data-service-name="বাংলাদেশ রেলওয়ে"
+            data-service-number="163"
           >
             <div class="flex justify-between">
               <div
@@ -391,7 +425,9 @@
                   alt=""
                 />
               </div>
-              <i class="fa-regular fa-heart h-[24px] w-[24px]"></i>
+              <i
+                class="heart-btn cursor-pointer fa-regular fa-heart h-[24px] w-[24px]"
+              ></i>
             </div>
             <div>
               <h1 class="font-bold text-[20px] mt-4">বাংলাদেশ রেলওয়ে</h1>
@@ -405,21 +441,22 @@
             </div>
             <div class="flex justify-between">
               <button
-                class="btn bg-white w-[45%] h-[30px] hover:bg-gray-200 text-gray-400"
+                class="btn bg-white w-[45%] h-[30px] hover:bg-gray-200 text-gray-400 copy-btn"
               >
                 <i class="fa-solid fa-copy"></i> Copy
               </button>
               <button
-                class="btn w-[45%] h-[30px] bg-[#00A63E] hover:bg-green-200 text-white"
+                class="btn w-[45%] h-[30px] bg-[#00A63E] hover:bg-green-200 text-white hover:text-black call-btn"
               >
-                <i class="fa-solid fa-phone text-white"></i> Call
+                <i class="fa-solid fa-phone text-white"></i>
+                Call
               </button>
             </div>
           </div>
         </div>
 
         <!-- Right Div Call History -->
-        <div class="right-div col-span-1 mt-[48px]">
+        <div class="right-div col-span-1 mt-[48px] shadow-lg">
           <div
             class="border-b-2 border-gray-200 bg-white h-[500px] w-[385px] md:w-full md:h-full rounded-xl md:gap-2 p-[32px]"
           >
@@ -428,14 +465,22 @@
                 <h1><i class="fa-regular fa-clock"></i> Call History</h1>
               </div>
               <button
-                class="rounded-3xl text-white bg-[#00A63E] h-[40px] w-[80px]"
+                id="clear-history"
+                class="rounded-3xl text-white bg-[#00A63E] h-[40px] w-[80px] cursor-pointer hover:bg-green-300 hover:text-black"
               >
                 Clear
               </button>
             </div>
+            <!-- Call History List -->
+            <ul
+              id="history-list"
+              class="mt-4 space-y-2 text-gray-700 bg-[#f2f7f2] px-2 rounded-md"
+            ></ul>
           </div>
         </div>
       </div>
     </main>
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
   </body>
 </html>
